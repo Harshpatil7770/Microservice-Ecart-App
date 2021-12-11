@@ -1,0 +1,5 @@
+package com.amzon.ecart.dao;
+
+public interface CategoryDao {
+
+}

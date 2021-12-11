@@ -1,0 +1,5 @@
+package com.amzon.ecart.util;
+
+public class GlobalResource {
+
+}

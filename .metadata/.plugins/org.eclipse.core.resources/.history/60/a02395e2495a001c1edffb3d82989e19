@@ -1,0 +1,16 @@
+package com.amzon.ecart.dao;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
+
+import com.amzon.ecart.model.Brand;
+@Repository
+public interface  BrandDao extends JpaRepository<Brand,Integer>{
+
+	@Query(name="select p.brand_brand_id,p.category_category_id from products p inner join brands b on p.brand_brand_id=b.brand_id inner join categories c on p.category_category_id=c.category_id where c.category_name=?",nativeQuery=true)
+	List<Brand> filterBrandByCategoryName(String categoryName);
+
+}

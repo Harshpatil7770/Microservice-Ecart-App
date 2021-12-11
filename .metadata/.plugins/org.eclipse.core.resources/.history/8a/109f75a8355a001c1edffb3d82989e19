@@ -1,0 +1,5 @@
+package com.amzon.ecart.resource;
+
+public class SearchController {
+
+}

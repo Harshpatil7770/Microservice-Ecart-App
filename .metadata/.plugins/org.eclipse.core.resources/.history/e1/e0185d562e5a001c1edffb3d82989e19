@@ -1,0 +1,5 @@
+package com.amzon.ecart.model;
+
+public class Product {
+
+}
